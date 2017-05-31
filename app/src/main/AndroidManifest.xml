@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nineinfosys.fluidconverter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppThemeNoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ActivitySetting">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SearchActivity" />
+
+        <activity android:name=".ConverterActivity.FlowActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionFlowListActivity" />
+        <activity android:name=".ConverterActivity.FlowMassActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionFlowMassListActivity" />
+        <activity android:name=".ConverterActivity.FlowMolarActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionFlowMolarListActivity" />
+        <activity android:name=".ConverterActivity.MassFluxDensityActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionMassFluxDensityListActivity" />
+        <activity android:name=".ConverterActivity.ConcentrationMolarActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionConcentrationMolarListActivity" />
+        <activity android:name=".ConverterActivity.ConcentrationSolutionActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionConcentrationSolutionListActivity" />
+        <activity android:name=".ConverterActivity.ViscosityDynamicActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionViscosityDynamicListActivity" />
+        <activity android:name=".ConverterActivity.ViscosityKinematicActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionViscosityKinematicListActivity" />
+        <activity android:name=".ConverterActivity.SurfaceTensionActivity">
+        </activity>
+        <activity android:name=".ConverterActivityList.ConversionSurfaceTensionListActivity" />
+        <activity android:name=".ConverterActivity.PermeabillityActivity">
+        </activity>
+        <activity android:name=".ConverterActivityList.ConversionPermeabillityListActivity" />
+    </application>
+
+</manifest>

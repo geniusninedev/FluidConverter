@@ -31,6 +31,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.nineinfosys.fluidconverter.ConverterActivityList.ConversionConcentrationSolutionListActivity;
 import com.nineinfosys.fluidconverter.Engin.ConcentrationSolution;
 import com.nineinfosys.fluidconverter.R;
@@ -79,6 +82,10 @@ public class ConcentrationSolutionActivity extends AppCompatActivity implements 
         formatsetting();
 
 
+        MobileAds.initialize(ConcentrationSolutionActivity.this, getString(R.string.ads_app_id));
+        AdView mAdView = (AdView) findViewById(R.id.adViewUnitConverter);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
         //keyboard hidden first time

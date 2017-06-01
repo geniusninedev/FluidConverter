@@ -31,6 +31,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.nineinfosys.fluidconverter.ConverterActivityList.ConversionFlowMolarListActivity;
 import com.nineinfosys.fluidconverter.Engin.FlowMolarConverter;
 import com.nineinfosys.fluidconverter.R;
@@ -81,6 +84,10 @@ public class FlowMolarActivity extends AppCompatActivity implements View.OnClick
         formatsetting();
 
 
+        MobileAds.initialize(FlowMolarActivity.this, getString(R.string.ads_app_id));
+        AdView mAdView = (AdView) findViewById(R.id.adViewUnitConverter);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
         //keyboard hidden first time

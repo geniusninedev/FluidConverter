@@ -22,6 +22,9 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.nineinfosys.fluidconverter.Adapter.RecyclerViewConversionListAdapter;
 import com.nineinfosys.fluidconverter.Engin.ConcentrationSolution;
 import com.nineinfosys.fluidconverter.R;
@@ -77,7 +80,10 @@ public class ConversionConcentrationSolutionListActivity extends AppCompatActivi
 
         //format of decimal pint
         formatsetting();
-
+        MobileAds.initialize(ConversionConcentrationSolutionListActivity.this, getString(R.string.ads_app_id));
+        AdView mAdView = (AdView) findViewById(R.id.adViewUnitConverterList);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         edittextConversionListvalue=(EditText)findViewById(R.id.edittextConversionListvalue) ;
         textconversionFrom=(TextView) findViewById(R.id.textViewConversionFrom) ;

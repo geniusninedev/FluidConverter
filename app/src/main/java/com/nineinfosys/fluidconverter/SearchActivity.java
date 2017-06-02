@@ -19,6 +19,7 @@ import com.nineinfosys.fluidconverter.ConverterActivity.ConcentrationSolutionAct
 import com.nineinfosys.fluidconverter.ConverterActivity.FlowActivity;
 import com.nineinfosys.fluidconverter.ConverterActivity.FlowMassActivity;
 import com.nineinfosys.fluidconverter.ConverterActivity.FlowMolarActivity;
+import com.nineinfosys.fluidconverter.ConverterActivity.MassFluxDensityActivity;
 import com.nineinfosys.fluidconverter.ConverterActivity.PermeabillityActivity;
 import com.nineinfosys.fluidconverter.ConverterActivity.SurfaceTensionActivity;
 import com.nineinfosys.fluidconverter.ConverterActivity.ViscosityDynamicActivity;
@@ -281,7 +282,7 @@ public class SearchActivity extends AppCompatActivity implements TextWatcher {
                 "Nanostokes -nSt",
                 "Picostokes -pSt",
                 "Femtostokes -fSt",
-                "Attostokes -aSt",
+                "Attostokes -aSt"
         };
 
         lv = (ListView) findViewById(R.id.list_view);
@@ -548,33 +549,33 @@ public class SearchActivity extends AppCompatActivity implements TextWatcher {
         }
 
     private void viscositykinematic() {
-        Intent i7=new Intent(SearchActivity.this,ViscosityKinematicActivity.class);
-        startActivity(i7);
+        Intent i1=new Intent(SearchActivity.this,ViscosityKinematicActivity.class);
+        startActivity(i1);
     }
 
     private void viscositydynamic() {
-        Intent i7=new Intent(SearchActivity.this,ViscosityDynamicActivity.class);
-        startActivity(i7);
+        Intent i2=new Intent(SearchActivity.this,ViscosityDynamicActivity.class);
+        startActivity(i2);
     }
 
     private void surfacetension() {
-        Intent i7=new Intent(SearchActivity.this,SurfaceTensionActivity.class);
-        startActivity(i7);
+        Intent i3=new Intent(SearchActivity.this,SurfaceTensionActivity.class);
+        startActivity(i3);
     }
 
     private void permeabiltiy() {
-        Intent i7=new Intent(SearchActivity.this,PermeabillityActivity.class);
-        startActivity(i7);
+        Intent i4=new Intent(SearchActivity.this,PermeabillityActivity.class);
+        startActivity(i4);
     }
 
     private void massflux() {
-        Intent i7=new Intent(SearchActivity.this,MassFluxDensity.class);
-        startActivity(i7);
+        Intent i5=new Intent(SearchActivity.this,MassFluxDensityActivity.class);
+        startActivity(i5);
     }
 
     private void flowmolar() {
-        Intent i7=new Intent(SearchActivity.this,FlowMolarActivity.class);
-        startActivity(i7);
+        Intent i6=new Intent(SearchActivity.this,FlowMolarActivity.class);
+        startActivity(i6);
     }
 
     private void flowmass() {
@@ -583,18 +584,18 @@ public class SearchActivity extends AppCompatActivity implements TextWatcher {
     }
 
     private void flow() {
-        Intent i7=new Intent(SearchActivity.this,FlowActivity.class);
-        startActivity(i7);
+        Intent i8=new Intent(SearchActivity.this,FlowActivity.class);
+        startActivity(i8);
     }
 
     private void concentrationsolution() {
-        Intent i7=new Intent(SearchActivity.this,ConcentrationSolutionActivity.class);
-        startActivity(i7);
+        Intent i9=new Intent(SearchActivity.this,ConcentrationSolutionActivity.class);
+        startActivity(i9);
     }
 
     private void concentrationmolar() {
-        Intent i7=new Intent(SearchActivity.this,ConcentrationMolarActivity.class);
-        startActivity(i7);
+        Intent i10=new Intent(SearchActivity.this,ConcentrationMolarActivity.class);
+        startActivity(i10);
     }
 
 

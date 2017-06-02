@@ -17,7 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@color/colorTextSetting"
+            android:background="@color/colorRedishyellow"
             android:orientation="vertical" >
             <TextView
                 android:layout_width="match_parent"
@@ -111,7 +111,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@color/colorTextSetting"
+            android:background="@color/colorRedishyellow"
             android:orientation="vertical"
 
             >

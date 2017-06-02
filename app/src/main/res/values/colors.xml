@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#d81b60</color>
-    <color name="colorPrimaryDark">#a00037</color>
+    <color name="colorPrimary">#2eaf46</color>
+    <color name="colorPrimaryDark">#237b27</color>
     <color name="colorPrimaryLight">#ff5c8d</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#2eaf46</color>
     <color name="appcolor">#1ab7b7</color>
     <color name="colordialog">#dee1de</color>
     <color name="colorwhitetext">#ffffff</color>
@@ -19,7 +19,7 @@
     <color name="coloryellowish">#e58f0c</color>
     <color name="colorOrangeyellow">#f7922c</color>
     <color name="colorLightskyblue">#27d8d5</color>
-    <color name="colorGreenish"> #2eaf46</color>
+    <color name="colorGreenish">#2eaf46</color>
     <color name="colorLightgreen">#59db59</color>
     <color name="coloryellow">#d3a32b</color>
     <color name="colorRedorange"> #db290d</color>
